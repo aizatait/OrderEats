@@ -1,0 +1,1 @@
+﻿Add-Migration CHANGE_ME -Context OrderEats.Infrastructure.Data.ApplicationDbContext -Verbose -OutputDir Data/Migrations -Project OrderEats.Infrastructure -StartupProject OrderEats.Api -Debug
