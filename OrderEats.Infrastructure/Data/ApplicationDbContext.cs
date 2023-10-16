@@ -33,21 +33,6 @@ namespace OrderEats.Infrastructure.Data
                 .WithMany()
                 .HasForeignKey(i => i.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
-
-            //modelBuilder.Entity<OrderItem>()
-            //    .HasOne(i => i.Order)
-            //    .WithMany(o => o.OrderItems)
-            //    .HasForeignKey(i => i.OrderId)                
-            //    .OnDelete(DeleteBehavior.Cascade);
-
-            //modelBuilder.Entity<OrderItem>()
-            //    .HasOne(i => i.Product)
-            //    .WithMany()
-            //    .HasForeignKey(i => i.ProductId)
-            //    .OnDelete(DeleteBehavior.Restrict);
-
-            //modelBuilder.Entity<PromoCode>()
-            //    .Property(i => i.Code).HasMaxLength(128);
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))

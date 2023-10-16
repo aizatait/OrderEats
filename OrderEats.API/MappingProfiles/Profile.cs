@@ -53,21 +53,6 @@ namespace OrderEats.API.MappingProfiles
 
             config.NewConfig<CartItem, CartItemDto>()
                 .Ignore(d => d.TotalPrice);
-
-            //config.NewConfig<Order, OrderDto>()
-            //    .MaxDepth(3);
-
-            //config.NewConfig<CartDto, Order>()
-            //    .Map(d => d.OrderItems, s => s.CartItems)
-            //    .Ignore(d => d.Id)
-            //    .Ignore(d => d.Status)
-            //    .Ignore(d => d.PromoCode);
-
-            //config.NewConfig<CartItemDto, OrderItem>()
-            //    .Ignore(d => d.Id)
-            //    .Ignore(d => d.Order)
-            //    .Ignore(d => d.OrderId)
-            //    .Ignore(d => d.Product);
         }
     }
 }
